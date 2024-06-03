@@ -71,11 +71,11 @@ const OrderDetailsPage: React.FC = () => {
                                 <td className="py-2 px-4 border-b">{order.productId.toString()}</td>
                             </tr>
                             <tr>
-                                <td className="py-2 px-4 border-b font-bold">Product Price</td>
+                                <td className="py-2 px-4 border-b font-bold">Product Price (wei)</td>
                                 <td className="py-2 px-4 border-b">{order.productPrice.toString()}</td>
                             </tr>
                             <tr>
-                                <td className="py-2 px-4 border-b font-bold">Courier Fee</td>
+                                <td className="py-2 px-4 border-b font-bold">Courier Fee (wei)</td>
                                 <td className="py-2 px-4 border-b">{order.courierFee.toString()}</td>
                             </tr>
                             <tr>

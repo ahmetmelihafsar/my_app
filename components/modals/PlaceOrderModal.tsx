@@ -48,7 +48,7 @@ const PlaceOrderModal: React.FC<PlaceOrderModalProps> = ({ isOpen, onClose }) =>
                         />
                     </div>
                     <div className="mb-4">
-                        <label className="block text-gray-700">Product Price (ETH)</label>
+                        <label className="block text-gray-700">Product Price (wei)</label>
                         <input
                             type="number"
                             value={productPrice}
@@ -58,7 +58,7 @@ const PlaceOrderModal: React.FC<PlaceOrderModalProps> = ({ isOpen, onClose }) =>
                         />
                     </div>
                     <div className="mb-4">
-                        <label className="block text-gray-700">Courier Fee (ETH)</label>
+                        <label className="block text-gray-700">Courier Fee (wei)</label>
                         <input
                             type="number"
                             value={courierFee}

@@ -48,11 +48,11 @@ const OrderDetailsModal: React.FC<OrderDetailsModalProps> = ({ isOpen, onClose, 
                             <td className="border-t py-2 px-4">{order.productId}</td>
                         </tr>
                         <tr>
-                            <td className="border-t py-2 px-4 font-semibold bg-gray-50">Product Price</td>
+                            <td className="border-t py-2 px-4 font-semibold bg-gray-50">Product Price (wei)</td>
                             <td className="border-t py-2 px-4">{order.productPrice.toString()}</td>
                         </tr>
                         <tr>
-                            <td className="border-t py-2 px-4 font-semibold bg-gray-50">Courier Fee</td>
+                            <td className="border-t py-2 px-4 font-semibold bg-gray-50">Courier Fee (wei)</td>
                             <td className="border-t py-2 px-4">{order.courierFee.toString()}</td>
                         </tr>
                         <tr>

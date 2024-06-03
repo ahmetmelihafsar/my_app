@@ -80,7 +80,7 @@ const OrderTable: React.FC<{ role: string }> = ({ role }) => {
             <table className="min-w-full bg-white">
                 <thead>
                     <tr>
-                        {['orderId', 'productId', 'productPrice', 'courierFee', 'consumer', 'seller', 'courier', 'status', 'orderTimestamp', 'deliveryTime', 'collateral'].map((key) => (
+                        {['orderId', 'productId', 'productPrice(wei)', 'courierFee(wei)', 'consumer', 'seller', 'courier', 'status', 'orderTimestamp', 'deliveryTime', 'collateral'].map((key) => (
                             <th key={key} className="py-2 px-4 border-b cursor-pointer" onClick={() => handleSort(key)}>
                                 {key.charAt(0).toUpperCase() + key.slice(1)}
                                 {sortKey === key && (

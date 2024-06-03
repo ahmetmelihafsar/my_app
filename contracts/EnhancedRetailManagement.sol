@@ -138,5 +138,6 @@ contract EnhancedRetailManagement {
         balances[msg.sender] = 0;
         payable(msg.sender).transfer(amount);
         emit Withdraw(msg.sender, amount);
+        
     }
 }
