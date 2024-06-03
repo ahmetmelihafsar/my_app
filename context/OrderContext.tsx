@@ -234,7 +234,7 @@ export const OrderProvider = ({ children }: { children: ReactNode }) => {
       const order = orders.find((order) => order.orderId === orderId);
       if (!order) throw new Error("Order not found");
       await contract.dispatchOrder(orderId, {
-        value: order.collateral, // Use stored collateral
+        value: order.productPrice * BigInt(2), // Use calculated collateral
       });
       await fetchOrders();
     } catch (error) {

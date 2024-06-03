@@ -16,7 +16,7 @@ const DispatchOrderModal: React.FC<DispatchOrderModalProps> = ({ isOpen, onClose
         if (orderId) {
             const order = orders.find((order) => order.orderId === orderId);
             if (order) {
-                setCollateral(order.collateral.toString());
+                setCollateral((order.productPrice * BigInt(2)).toString());
             }
         }
     }, [orderId, orders]);
