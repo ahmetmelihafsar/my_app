@@ -125,9 +125,8 @@ contract EnhancedRetailManagement {
         order.status = OrderStatus.Cancelled;
         balances[order.consumer] += order.productPrice + order.courierFee;
         balances[order.seller] += order.productPrice;
-        // Burn the remaining collateral to ensure safety of delivery
-        // Note: In Solidity, burning means sending Ether to an address that no one controls
-        // Transfer the collateral to address(0)
+
+        //burning
         balances[address(0)] += order.collateral;
         emit OrderCancelled(orderId);
     }

@@ -3,7 +3,7 @@ import { ethers } from 'ethers';
 import contractABIs from '../contracts/EnhancedRetailManagement.json';
 import { OrderStatus, Order } from '../types';
 
-const defaultContractAddress = "0xd742Aad8EE17E8167cCC01b1D449B644D920554c";
+const defaultContractAddress = "0x7c5df304a847887829549464b3938211b6f5dba4";
 const contractABI = contractABIs.abi;
 
 interface OrderContextProps {
